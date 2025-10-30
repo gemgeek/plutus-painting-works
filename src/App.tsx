@@ -1,12 +1,27 @@
+import Navbar from './components/Navbar';
+import Hero from './sections/Hero';
+import About from './sections/About';
+import Expertise from './sections/Expertise';
+import ColorSense from './sections/ColorSense';
+import Testimonials from './sections/Testimonials';
+import Team from './sections/Team';
+import CTA from './sections/CTA';
+import Footer from './components/Footer';
+
 function App() {
   return (
-    <div className="bg-gray-900 text-white min-h-screen p-8">
-      <h1 className="text-3xl font-bold text-blue-400">
-        Plutus Painting Works
-      </h1>
-      <p>The new website is under construction!</p>
-    </div>
-  )
+    <main>
+      <Navbar />
+      <Hero />
+      <About />
+      <Expertise />
+      <ColorSense />
+      <Testimonials />
+      <Team />
+      <CTA />
+      <Footer />
+    </main>
+  );
 }
 
-export default App
+export default App;

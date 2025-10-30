@@ -1,3 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: theme('colors.indigo.900');
+}
+
+.swiper-pagination-bullet-active {
+  background-color: theme('colors.indigo.900');
+}
+
+@media (max-width: 640px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    --swiper-navigation-size: 28px;
+  }
+}
+
+.team-card {
+  background-color: theme('colors.white');
+  transform: scale(0.9); 
+  opacity: 0.7;
+}
+
+
+.swiper-slide-active .team-card {
+  background-color: theme('colors.orange.500');
+  transform: scale(1); 
+  opacity: 1;
+}
+
+.swiper-slide-active .team-card h3 {
+  color: theme('colors.white');
+}
+
+.swiper-slide-active .team-card p {
+  color: theme('colors.gray.100');
+}
+
+.swiper-slide-active .team-card img {
+  border-color: theme('colors.white');
+}
