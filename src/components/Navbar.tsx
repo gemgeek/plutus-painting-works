@@ -1,39 +1,40 @@
 import { useState } from 'react';
 import logo from "../assets/plutus-logo.png";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Services', href: '#services' },
-    { name: 'Gallery', href: '#gallery' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', to: '/' },
+    { name: 'About', to: '/about' },
+    { name: 'Services', to: '/services' },
+    { name: 'Gallery', to: '/gallery' },
+    { name: 'Contact', to: '/contact' },
   ];
 
   return (
     <nav className="absolute left-0 top-0 z-20 w-full bg-transparent p-6 text-white">
       <div className="container mx-auto flex max-w-7xl items-center justify-between">
         {/* Logo / Brand Name */}
-        <a href="#home" className="flex items-center">
+        <Link to="/" className="flex items-center">
         <img
           src={logo}
           alt="Plutus Painting Works Logo"
           className="h-10 w-auto"  
         />
-      </a>
+      </Link>
 
         {/* Desktop Navigation */}
         <ul className="hidden space-x-6 md:flex">
           {navLinks.map((link) => (
             <li key={link.name}>
-              <a
-                href={link.href}
+              <Link
+                to={link.to}
                 className="font-medium transition-colors hover:text-blue-300"
               >
                 {link.name}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
@@ -87,13 +88,13 @@ const Navbar = () => {
         <ul className="flex flex-col items-center space-y-4 py-6">
           {navLinks.map((link) => (
             <li key={link.name}>
-              <a
-                href={link.href}
+              <Link
+                to={link.to}
                 className="block py-2 text-lg font-medium"
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

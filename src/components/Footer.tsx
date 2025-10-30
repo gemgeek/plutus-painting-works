@@ -4,40 +4,35 @@ import {
   FaLinkedin,
   FaTiktok,
 } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 import FooterBgImage from '../assets/footer-background.png';
 
 const Footer = () => {
   const navLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Services', href: '#services' },
-    { name: 'Gallery', href: '#gallery' },
-    { name: 'Contact', href: '#contact' },
+    { name: 'Home', to: '/' },
+    { name: 'About', to: '/about' },
+    { name: 'Services', to: '/services' },
+    { name: 'Gallery', to: '/gallery' },
+    { name: 'Contact', to: '/contact' },
   ];
 
   return (
     <footer className="relative bg-gray-900 text-gray-300">
-      
       <img
         src={FooterBgImage}
         alt="Plutus painting works background"
         className="absolute inset-0 h-full w-full object-cover"
       />
-      
+
       <div className="absolute inset-0 bg-black/70" />
 
       <div className="relative z-10 container mx-auto max-w-7xl px-6 py-16">
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
-          
-          {/* Column 1: Brand */}
           <div>
-            <a
-              href="#home"
-              className="text-2xl font-bold text-white"
-            >
+            <Link to="/" className="text-2xl font-bold text-white">
               Plutus Painting Works
-            </a>
+            </Link>
             <p className="mt-2 text-gray-400">
               We bring color to your life.
             </p>
@@ -50,12 +45,12 @@ const Footer = () => {
             <ul className="mt-4 space-y-2">
               {navLinks.map((link) => (
                 <li key={link.name}>
-                  <a
-                    href={link.href}
+                  <Link
+                    to={link.to}
                     className="transition-colors hover:text-white"
                   >
                     {link.name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -78,7 +73,6 @@ const Footer = () => {
               <li>Tema, Ghana</li>
             </ul>
           </div>
-
         </div>
 
         <div className="mt-12 border-t border-gray-800 pt-8">
@@ -86,7 +80,7 @@ const Footer = () => {
             <p className="text-gray-400">
               © {new Date().getFullYear()} Plutus Painting Works. All Rights Reserved.
             </p>
-            
+
             <div className="mt-4 flex space-x-4 sm:mt-0">
               <a
                 href="https://www.facebook.com/profile.php?id=61559921330795&mibextid=JRoKGi"
