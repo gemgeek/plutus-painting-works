@@ -21,7 +21,7 @@ const Navbar = () => {
         <img
           src={logo}
           alt="Plutus Painting Works Logo"
-          className="h-10 w-auto"  
+          className="h-12 w-auto"  
         />
       </Link>
 

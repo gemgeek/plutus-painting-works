@@ -11,13 +11,19 @@ import img5 from '../assets/plutus-5.jpg';
 import img6 from '../assets/plutus-6.jpg';
 import img7 from '../assets/plutus-7.jpg';
 import img8 from '../assets/plutus-8.jpg';
+import img9 from '../assets/plutus-9.jpg';
+import img10 from '../assets/plutus-10.jpg';
+import img11 from '../assets/plutus-11.jpg';
+import img12 from '../assets/plutus-12.jpg';
 
 import myVideo1 from '../assets/plutus-vid-1.mp4';
 import myVideo2 from '../assets/plutus-vid-2.mp4';
 import myVideo3 from '../assets/plutus-vid-3.mp4';
+import myVideo4 from '../assets/plutus-vid-4.mp4';
 
 import videoThumb1 from '../assets/plutus-work.jpg';
 import videoThumb2 from '../assets/plutus-work-2.jpg';
+import videoThumb3 from '../assets/plutus-11.jpg';
 
 const galleryItems = [
   {
@@ -69,6 +75,31 @@ const galleryItems = [
     type: 'image' as const,
     thumbnail: img8,
     src: img8,
+  },
+  {
+    type: 'image' as const,
+    thumbnail: img9,
+    src: img9,
+  },
+  {
+    type: 'image' as const,
+    thumbnail: img10,
+    src: img10,
+  },
+  {
+    type: 'image' as const,
+    thumbnail: img11,
+    src: img11,
+  },
+  {
+    type: 'image' as const,
+    thumbnail: img12,
+    src: img12,
+  },
+  {
+    type: 'video' as const,
+    thumbnail: videoThumb3,
+    src: myVideo4,
   },
 ];
 

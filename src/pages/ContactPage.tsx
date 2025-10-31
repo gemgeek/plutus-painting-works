@@ -66,7 +66,7 @@ const ContactPage = () => {
                 <div className="flex items-center gap-3">
                   <FaPhone className="text-orange-500" size={20} />
                   <span className="text-gray-700">
-                    +233 54 279 2537 / 020 350 8629
+                    +233 54 279 2537 / +233 53 502 7439
                   </span>
                 </div>
                 <div className="flex items-center gap-3">

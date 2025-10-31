@@ -69,7 +69,7 @@ const Footer = () => {
                   plutuspaintingworks23@gmail.com
                 </a>
               </li>
-              <li>+233 54 279 2537 / 020 350 8629</li>
+              <li>+233 54 279 2537 / +233 53 502 7439 </li>
               <li>Tema, Ghana</li>
             </ul>
           </div>
