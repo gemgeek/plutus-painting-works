@@ -1,32 +1,26 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
-import serviceImg1 from '../assets/painting-interior.png';
-import serviceImg2 from '../assets/styling-space.png';
-import serviceImg3 from '../assets/decoration-exterior.png';
-import serviceImg4 from '../assets/color-consult.png';
-import serviceImg5 from '../assets/mural-art.png';
-
 const servicesData = [
   {
     title: 'Space Planning & Interior Styling',
-    image: serviceImg2,
+    image: '/assets/styling-space.png'
   },
   {
     title: 'Professional Interior & Exterior Painting',
-    image: serviceImg1,
+    image: '/assets/painting-interior.png'
   },
   {
     title: 'Professional Interior & Exterior Decoration',
-    image: serviceImg3,
+    image: '/assets/decoration-exterior.png'
   },
   {
     title: 'Color Consultation and Theme Design',
-    image: serviceImg4,
+    image: '/assets/color-consult.png'
   },
   {
     title: 'Art-Inspired Wall Features & Murals',
-    image: serviceImg5,
+    image: '/assets/mural-art.png'
   },
 ];
 

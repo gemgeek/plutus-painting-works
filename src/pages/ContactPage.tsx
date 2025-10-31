@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaWhatsapp, FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa';
-import ContactHeroImage from '../assets/plutus-hero.png'; 
+import { FaWhatsapp, FaMapMarkerAlt, FaPhone, FaEnvelope } from 'react-icons/fa'; 
 
 const ContactPage = () => {
   const whatsappLink =
@@ -11,7 +10,7 @@ const ContactPage = () => {
       {/* Page Hero */}
       <section
         className="relative flex h-[300px] items-center justify-center bg-cover bg-center md:h-[400px]"
-        style={{ backgroundImage: `url(${ContactHeroImage})` }}
+        style={{ backgroundImage: `url('/assets/plutus-hero.png')` }}
       >
         <div className="absolute inset-0 bg-black/60" />
         <motion.h1

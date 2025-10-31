@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import logo from "../assets/plutus-logo.png";
 import { Link } from 'react-router-dom';
 
 const Navbar = () => {
@@ -19,7 +18,7 @@ const Navbar = () => {
         {/* Logo / Brand Name */}
         <Link to="/" className="flex items-center">
         <img
-          src={logo}
+          src="/assets/plutus-logo.png"
           alt="Plutus Painting Works Logo"
           className="h-12 w-auto"  
         />

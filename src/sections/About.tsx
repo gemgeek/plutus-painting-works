@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import AboutImage from '../assets/plutus-about.png';
 
 const About = () => {
   return (
@@ -44,7 +43,7 @@ const About = () => {
             className="h-[450px] md:h-[550px]" 
           >
             <img
-              src={AboutImage}
+              src="/assets/plutus-about.png" 
               alt="Beautifully painted modern interior"
               className="h-full w-full rounded-lg object-cover shadow-xl"
             />

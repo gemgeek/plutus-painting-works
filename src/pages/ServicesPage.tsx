@@ -6,8 +6,7 @@ import {
   FaLightbulb,
   FaComments,
   FaMagic,
-} from 'react-icons/fa';
-import ServicesHeroImage from '../assets/plutus-hero.png'; 
+} from 'react-icons/fa'; 
 
 const ServicesPage = () => {
   const servicesList = [
@@ -71,7 +70,7 @@ const ServicesPage = () => {
     <div className="bg-white">
       <section
         className="relative flex h-[300px] items-center justify-center bg-cover bg-center md:h-[400px]"
-        style={{ backgroundImage: `url(${ServicesHeroImage})` }}
+        style={{ backgroundImage: `url('/assets/plutus-hero.png')` }}
       >
         <div className="absolute inset-0 bg-black/60" />
         <motion.h1

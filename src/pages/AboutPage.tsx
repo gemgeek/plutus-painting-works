@@ -1,13 +1,12 @@
 import { motion } from 'framer-motion';
 import Team from '../sections/Team';
-import AboutHeroImage from '../assets/plutus-hero.png'; 
 
 const AboutPage = () => {
   return (
     <div className="bg-white">
       <section
         className="relative flex h-[300px] items-center justify-center bg-cover bg-center md:h-[400px]"
-        style={{ backgroundImage: `url(${AboutHeroImage})` }}
+        style={{ backgroundImage: `url('/assets/plutus-hero.png')` }}
       >
         <div className="absolute inset-0 bg-black/60" />
         <motion.h1

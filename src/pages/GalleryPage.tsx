@@ -3,103 +3,81 @@ import { motion } from 'framer-motion';
 import Lightbox from '../components/Lightbox';
 import { FaPlayCircle, FaImage } from 'react-icons/fa';
 
-import GalleryHeroImage from '../assets/plutus-1.jpg';
-import img1 from '../assets/plutus-2.jpg';
-import img3 from '../assets/plutus-3.jpg';
-import img4 from '../assets/plutus-4.jpg';
-import img5 from '../assets/plutus-5.jpg';
-import img6 from '../assets/plutus-6.jpg';
-import img7 from '../assets/plutus-7.jpg';
-import img8 from '../assets/plutus-8.jpg';
-import img9 from '../assets/plutus-9.jpg';
-import img10 from '../assets/plutus-10.jpg';
-import img11 from '../assets/plutus-11.jpg';
-import img12 from '../assets/plutus-12.jpg';
-
-import myVideo1 from '../assets/plutus-vid-1.mp4';
-import myVideo2 from '../assets/plutus-vid-2.mp4';
-import myVideo3 from '../assets/plutus-vid-3.mp4';
-import myVideo4 from '../assets/plutus-vid-4.mp4';
-
-import videoThumb1 from '../assets/plutus-work.jpg';
-import videoThumb2 from '../assets/plutus-work-2.jpg';
-import videoThumb3 from '../assets/plutus-11.jpg';
-
 const galleryItems = [
   {
     type: 'image' as const,
-    thumbnail: img1,
-    src: img1,
+    thumbnail: '/assets/plutus-2.jpg',
+    src: '/assets/plutus-2.jpg',
   },
   {
     type: 'video' as const,
-    thumbnail: videoThumb1,
-    src: myVideo1,
+    thumbnail: '/assets/plutus-work.jpg',
+    src: '/assets/plutus-vid-1.mp4',
   },
   {
     type: 'image' as const,
-    thumbnail: img3,
-    src: img3,
+    thumbnail: '/assets/plutus-3.jpg',
+    src: '/assets/plutus-3.jpg',
   },
   {
     type: 'image' as const,
-    thumbnail: img4,
-    src: img4,
+    thumbnail: '/assets/plutus-4.jpg',
+    src: '/assets/plutus-4.jpg',
   },
   {
     type: 'image' as const,
-    thumbnail: img5,
-    src: img5,
+    thumbnail: '/assets/plutus-5.jpg',
+    src: '/assets/plutus-5.jpg',
   },
   {
     type: 'video' as const,
-    thumbnail: videoThumb2,
-    src: myVideo2,
+    thumbnail: '/assets/plutus-work-2.jpg',
+    src: '/assets/plutus-vid-2.mp4',
   },
   {
     type: 'image' as const,
-    thumbnail: img6,
-    src: img6,
+    thumbnail: '/assets/plutus-6.jpg',
+    src: '/assets/plutus-6.jpg',
   },
   {
     type: 'image' as const,
-    thumbnail: img7,
-    src: img7,
+    thumbnail: '/assets/plutus-7.jpg',
+    src: '/assets/plutus-7.jpg',
   },
   {
     type: 'video' as const,
-    thumbnail: videoThumb2,
-    src: myVideo3,
+    thumbnail: '/assets/plutus-work-2.jpg',
+    src: '/assets/plutus-vid-3.mp4',
   },
   {
     type: 'image' as const,
-    thumbnail: img8,
-    src: img8,
+    thumbnail: '/assets/plutus-8.jpg',
+    src: '/assets/plutus-8.jpg',
   },
   {
     type: 'image' as const,
-    thumbnail: img9,
-    src: img9,
+    thumbnail: '/assets/plutus-9.jpg',
+    src: '/assets/plutus-9.jpg',
   },
   {
     type: 'image' as const,
-    thumbnail: img10,
-    src: img10,
+    thumbnail: '/assets/plutus-10.jpg',
+    src: '/assets/plutus-10.jpg',
   },
   {
     type: 'image' as const,
-    thumbnail: img11,
-    src: img11,
+    thumbnail: '/assets/plutus-11.jpg',
+    src: '/assets/plutus-11.jpg',
   },
   {
     type: 'image' as const,
-    thumbnail: img12,
-    src: img12,
+    thumbnail: '/assets/plutus-12.jpg',
+    src: '/assets/plutus-12.jpg',
   },
   {
     type: 'video' as const,
-    thumbnail: videoThumb3,
-    src: myVideo4,
+    thumbnail: '/assets/plutus-11.jpg',
+    src: '/assets/plutus-vid-4.mp4',
   },
 ];
 
@@ -113,7 +91,7 @@ const GalleryPage = () => {
     <div className="bg-white">
       <section
         className="relative flex h-[300px] items-center justify-center bg-cover bg-center md:h-[400px]"
-        style={{ backgroundImage: `url(${GalleryHeroImage})` }}
+        style={{ backgroundImage: `url('/assets/plutus-1.jpg')` }}
       >
         <div className="absolute inset-0 bg-black/60" />
         <motion.h1

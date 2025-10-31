@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import ColorSenseImage from '../assets/color-palette.png';
 
 const ColorSense = () => {
   return (
@@ -15,7 +14,7 @@ const ColorSense = () => {
             className="h-[450px] md:h-[550px]"
           >
             <img
-              src={ColorSenseImage}
+              src="/assets/color-palette.png"
               alt="A palette of paint colors"
               className="h-full w-full rounded-lg object-cover shadow-xl"
             />

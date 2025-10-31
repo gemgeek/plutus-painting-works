@@ -4,11 +4,6 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaTimes } from 'react-icons/fa';
 
-import teamImg1 from '../assets/team-member-1.png';
-import teamImg2 from '../assets/team-member-2.png';
-import teamImg3 from '../assets/team-member-3.png';
-import teamImg4 from '../assets/team-member-4.png';
-
 type TeamMember = {
   name: string;
   title: string;
@@ -20,25 +15,25 @@ const teamData: TeamMember[] = [
   {
     name: 'Emmanuel O. Mensah',
     title: 'Chief Executive Officer',
-    image: teamImg1,
+    image: '/assets/team-member-1.png',
     bio: 'Emmanuel is a visionary leader with over 10 years of experience in the painting and design industry, driving Plutus Painting Works with a passion for quality and innovation.',
   },
   {
     name: 'Matilda Esenam Gbeve',
     title: 'Brand & Strategy Director',
-    image: teamImg2,
+    image: '/assets/team-member-2.png',
     bio: 'Matilda shapes the identity of the brand, ensuring every project reflects our core values. Her creative direction is the guiding force behind our unique aesthetic.',
   },
   {
     name: 'Kingsley Donkor',
     title: 'Business Development Director',
-    image: teamImg3,
+    image: '/assets/team-member-3.png',
     bio: 'Kingsley builds lasting relationships with our clients, architects, and partners. He is dedicated to expanding our services and ensuring client satisfaction.',
   },
   {
     name: 'Nancy Frimpomaa',
     title: 'Interior Design Lead',
-    image: teamImg4,
+    image: '/assets/team-member-4.png',
     bio: 'Nancy leads our design team, blending artistry with functionality. Her expertise in color psychology and space planning transforms any environment.',
   },
 ];

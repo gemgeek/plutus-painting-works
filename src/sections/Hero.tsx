@@ -1,11 +1,10 @@
 import { Link } from 'react-router-dom';
-import HeroBackgroundImage from '../assets/plutus-hero.png';
 
 const Hero = () => {
   return (
     <section
       className="relative flex min-h-screen items-center justify-center bg-cover bg-center"
-      style={{ backgroundImage: `url(${HeroBackgroundImage})` }}
+      style={{ backgroundImage: 'url(/assets/plutus-hero.png)' }}
     >
       <div className="absolute inset-0 bg-black/50" />
 

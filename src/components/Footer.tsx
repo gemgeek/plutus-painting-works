@@ -6,8 +6,6 @@ import {
 } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-import FooterBgImage from '../assets/footer-background.png';
-
 const Footer = () => {
   const navLinks = [
     { name: 'Home', to: '/' },
@@ -20,7 +18,7 @@ const Footer = () => {
   return (
     <footer className="relative bg-gray-900 text-gray-300">
       <img
-        src={FooterBgImage}
+        src="/assets/footer-background.png"
         alt="Plutus painting works background"
         className="absolute inset-0 h-full w-full object-cover"
       />
